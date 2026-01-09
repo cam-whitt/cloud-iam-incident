@@ -63,6 +63,20 @@ This mirrors real-world SOC investigations involving:
 - **Audit logs** confirmed role assignment prior to failed attempts
 
 This correlation increased severity and risk classification.
+## Evidence
+
+### Failed Sign-In Activity
+The following screenshot shows repeated failed authentication attempts for the test user `jdoe_test` captured in Azure Entra ID sign-in logs.
+
+![Failed sign-ins](./evidence/signin-failures.png)
+
+---
+
+### Role Assignment Audit Log
+This screenshot confirms the role assignment for the same user prior to the failed sign-in activity, increasing the risk context of the event.
+
+![Role assignment audit](./evidence/audit-role-assignment.png)
+
 
 ---
 
